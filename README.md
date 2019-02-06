@@ -1,0 +1,1 @@
+# yo @smartive/react-app
