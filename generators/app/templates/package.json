@@ -1,0 +1,15 @@
+{
+  "name": "<%= app_name %>",
+  "version": "1.0.0-alpha",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --config './config/webpack/config.js' --hot --mode development",
+    "lint:ts": "tslint --project tsconfig.json",
+    "lint:types": "tsc --noEmit",
+    "lint:prettier": "prettier --list-different \"src/**/*.ts{,x}\"",
+    "build": "webpack --config './config/webpack/config.js' --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smartive AG <hello@smartive.ch>",
+  "license": "MIT"
+}
