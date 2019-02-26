@@ -92,8 +92,8 @@ module.exports = class extends Generator {
       'src/views/pages/home/i18n/en.yml',
       'src/views/pages/home/i18n/de.yml',
 
-      'src/views/providers/i18n/i18n-provider.tsx',
-      'src/views/providers/i18n/index.ts',
+      'src/providers/i18n/i18n-provider.tsx',
+      'src/providers/i18n/index.ts',
 
       'src/views/styled-components.tsx',
 

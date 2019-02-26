@@ -1,4 +1,4 @@
 sidebar:
   title: Sidebar
 main:
-  text: Today is the {{date, YY>Y-MM-DD}}
+  text: Today is the {{date, YYYY-MM-DD}}

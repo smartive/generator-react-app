@@ -1,8 +1,8 @@
 import i18n from 'i18next';
 import React, { FC } from 'react';
 
+import { I18nProvider } from './providers/i18n/i18n-provider';
 import { Home } from './views/pages/home';
-import { I18nProvider } from './views/providers/i18n/i18n-provider';
 
 const locales = require('i18n-locales');
 
