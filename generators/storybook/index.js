@@ -24,8 +24,6 @@ module.exports = class extends Generator {
 
       'src/views/compositions/form/form.stories.tsx',
 
-      // layout
-
       'src/views/pages/home/home.stories.tsx',
 
       'src/views/storybook-utils.tsx',

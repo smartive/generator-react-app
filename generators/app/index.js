@@ -6,7 +6,7 @@ const { basename } = require('path');
 
 module.exports = class extends Generator {
   initializing() {
-    this.log(say(blue(`Hi, I'm ${bgBlue.white(`@smartive/reaktor`)}. I'll help you setup your next React project.`)));
+    this.log(say(blue(`Hi, I'm ${bgBlue.white(`@smartive/react-app`)}. I'll help you setup your next React project.`)));
   }
 
   async prompting() {
@@ -49,6 +49,7 @@ module.exports = class extends Generator {
 
       'config/webpack/config.js',
 
+      '.gitignore',
       '.prettierignore',
       'babel.config.js',
       'package.json',
@@ -83,8 +84,6 @@ module.exports = class extends Generator {
       'src/views/compositions/form/form.tsx',
       'src/views/compositions/form/form.test.tsx',
       'src/views/compositions/form/index.ts',
-
-      // layout
 
       'src/views/pages/home/home.tsx',
       'src/views/pages/home/home.test.tsx',
