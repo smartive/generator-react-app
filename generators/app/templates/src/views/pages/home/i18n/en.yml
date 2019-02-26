@@ -1,0 +1,4 @@
+sidebar:
+  title: Sidebar
+main:
+  text: Today is the {{date, YYYY-MM-DD}}

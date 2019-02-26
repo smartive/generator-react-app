@@ -1,0 +1,16 @@
+{
+  "name": "<%= app_name %>",
+  "version": "1.0.0-alpha",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --config './config/webpack/config.js' --hot --mode development",
+    "test": "jest -c ./config/jest/config.js",
+    "test:integration": "testcafe chrome ./tests/**/*.spec.ts --hostname=localhost --ports=1337,1338",
+    "build": "webpack --config './config/webpack/config.js' --mode production",
+    "lint:ts": "tslint --project tsconfig.json",
+    "lint:types": "tsc --noEmit",
+    "lint:prettier": "prettier --list-different \"src/**/*.ts{,x}\""
+  },
+  "author": "smartive AG <hello@smartive.ch>",
+  "license": "MIT"
+}

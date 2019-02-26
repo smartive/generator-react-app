@@ -1,0 +1,3 @@
+# Intentionally left blank.
+# This is needed for the webpack loader to have a valid module accessible, but will be overriden
+# by all i18n/*.yml files.

@@ -1,0 +1,4 @@
+sidebar:
+  title: Seitenleiste
+main:
+  text: Heute ist der {{date, DD.MM.YYYY}}
