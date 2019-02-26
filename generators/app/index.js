@@ -48,8 +48,9 @@ module.exports = class extends Generator {
       'config/typescript/tsconfig.json',
 
       'config/webpack/config.js',
+      'config/webpack/loaders/i18n-locales.js',
+      'config/webpack/loaders/i18n.yml',
 
-      '.gitignore',
       '.prettierignore',
       'babel.config.js',
       'package.json',
@@ -88,6 +89,11 @@ module.exports = class extends Generator {
       'src/views/pages/home/home.tsx',
       'src/views/pages/home/home.test.tsx',
       'src/views/pages/home/index.ts',
+      'src/views/pages/home/i18n/en.yml',
+      'src/views/pages/home/i18n/de.yml',
+
+      'src/views/providers/i18n/i18n-provider.tsx',
+      'src/views/providers/i18n/index.ts',
 
       'src/views/styled-components.tsx',
 
@@ -106,6 +112,9 @@ coverage
 dist
 build
 storybook-static
+*.log
+.env
+!.env.dist
 
 `,
     );
@@ -157,10 +166,12 @@ max_line_length = 125
       'clean-webpack-plugin',
       'copy-webpack-plugin',
       'css-loader',
+      'date-fns',
       'enzyme',
       'enzyme-adapter-react-16',
       'enzyme-to-json',
       'html-webpack-plugin',
+      'i18next',
       'jest',
       'prettier',
       'source-map-loader',

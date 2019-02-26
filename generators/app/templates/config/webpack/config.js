@@ -36,10 +36,17 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /i18n\.(yml|yaml)$/,
+        loader: path.join(resolveApp('config'), 'webpack', 'loaders', 'i18n-locales.js'),
+      },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      'i18n-locales': require.resolve(path.join(resolveApp('config'), 'webpack', 'loaders', 'i18n.yml')),
+    },
   },
   devServer: {
     contentBase: [resolveApp('public')],

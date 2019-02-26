@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
+import i18n from 'i18next';
 
 export const Home: FC = () => (
   <div>
-    <aside>Sidebar</aside>
+    <aside>{i18n.t('home:sidebar.title')}</aside>
     <main>
-      <p>Main</p>
+      <p>{i18n.t('home:main.text', { date: new Date()})}</p>
     </main>
   </div>
 );
